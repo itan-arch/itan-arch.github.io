@@ -3,3 +3,4 @@ function mostrarSeccion(id) {
     secciones.forEach(seccion => seccion.classList.add('oculto'));
     document.getElementById(id).classList.remove('oculto');
 }
+
