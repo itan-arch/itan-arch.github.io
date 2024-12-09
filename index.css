@@ -34,28 +34,15 @@ button:hover {
     background: #ff1493;
 }
 
-.contenido-servicios {
-    margin: 20px;
+.contenido {
+    display: none;
+    margin: 20px auto;
     padding: 20px;
-    background: white;
+    max-width: 800px;
+    background: #ffffff;
+    border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.dashboard {
-    background: #ffffff;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h3 {
-    color: #005792;
-    margin-top: 20px;
-}
-
-.servicio {
-    margin: 15px 0;
 }
 
 .detalle {
@@ -64,6 +51,15 @@ h3 {
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: max-height 0.3s ease-out;
+}
+
+.background-header {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 .btn-back {
