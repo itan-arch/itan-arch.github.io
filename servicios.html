@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Campaña Ética</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="background-header">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones efectivas para manejar y prevenir la ansiedad laboral.</p>
+    </header>
+
+    <main>
+        <section class="contenido-servicios">
+            <h2>Dashboard: Problemática y Objetivo de la Campaña</h2>
+            
+            <div class="dashboard">
+                <h3>¿Por qué es importante abordar la ansiedad laboral?</h3>
+                <p>
+                    La ansiedad laboral es un factor crítico en el ambiente organizacional que afecta tanto el rendimiento como la salud de los empleados. 
+                    Según Martínez (2006), el estrés crónico puede generar trastornos psicológicos graves, afectar las relaciones interpersonales en el trabajo 
+                    y reducir la productividad organizacional. Las intervenciones deben enfocarse en <strong>visibilizar</strong> y <strong>sensibilizar</strong> 
+                    sobre los efectos de la ansiedad, utilizando principios éticos que respeten la confidencialidad y el bienestar de los empleados.
+                </p>
+                <p>
+                    <strong>El objetivo de nuestra campaña es:</strong><br>
+                    <strong>Qué:</strong> Sensibilizar sobre la importancia de la salud mental en el trabajo.<br>
+                    <strong>Cómo:</strong> A través de programas de prevención, talleres y terapia individual.<br>
+                    <strong>Para qué:</strong> Para reducir el estrés laboral y mejorar el bienestar psicológico y la productividad organizacional.
+                </p>
+                <h3>Cómo nuestros servicios ayudan a la prevención:</h3>
+                <p>
+                    Los servicios están diseñados para identificar, prevenir y gestionar la ansiedad laboral, utilizando enfoques basados en la psicología clínica 
+                    y organizacional. Según la UNESCO (2005), los principios éticos y el enfoque integral permiten que los empleados se sientan apoyados y capacitados 
+                    para enfrentar los desafíos emocionales relacionados con el trabajo.
+                </p>
+            </div>
+            
+            <h3>Estrategias Principales</h3>
+            <div class="servicio">
+                <button onclick="toggleDetail('servicio1')">Sesiones grupales de manejo del estrés</button>
+                <div id="servicio1" class="detalle oculto">
+                    <p>
+                        Este servicio incluye talleres prácticos de relajación y mindfulness para manejar el estrés, basados en técnicas cognitivas y conductuales.
+                        Martínez (2006) sugiere que estas técnicas ayudan a reducir la ansiedad y mejorar el bienestar general.
+                    </p>
+                </div>
+            </div>
+
+            <div class="servicio">
+                <button onclick="toggleDetail('servicio2')">Terapia individual con enfoque cognitivo-conductual</button>
+                <div id="servicio2" class="detalle oculto">
+                    <p>
+                        La terapia individual proporciona intervenciones personalizadas para abordar problemas específicos, como la ansiedad laboral crónica. 
+                        Según la APA (2017), la terapia cognitivo-conductual es una de las formas más efectivas de intervención para la ansiedad laboral.
+                    </p>
+                </div>
+            </div>
+
+            <div class="servicio">
+                <button onclick="toggleDetail('servicio3')">Consultoría organizacional para prevención de la ansiedad</button>
+                <div id="servicio3" class="detalle oculto">
+                    <p>
+                        Ofrecemos consultoría para implementar políticas de bienestar emocional en la empresa, diseñando programas preventivos que promuevan un ambiente saludable.
+                        Estas intervenciones están alineadas con los principios de ética organizacional descritos por la UNESCO (2005).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn-back" onclick="window.history.back()">Volver a la página principal</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
