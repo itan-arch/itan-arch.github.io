@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Campaña Ética</title>
+    <link rel="stylesheet" href="servicios.css">
+</head>
+<body>
+    <header class="background-header">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones efectivas para manejar y prevenir la ansiedad laboral.</p>
+    </header>
+
+    <main>
+        <section class="contenido-servicios">
+            <h2>Estrategias Principales</h2>
+            <div class="servicio">
+                <button onclick="toggleDetail('servicio1')">Sesiones grupales de manejo del estrés</button>
+                <div id="servicio1" class="detalle oculto">
+                    <p>
+                        Ofrecemos talleres de relajación y mindfulness para reducir la ansiedad laboral, mejorando la salud emocional colectiva. Estas sesiones están 
+                        diseñadas para fomentar la conexión entre empleados y líderes. Basado en técnicas sugeridas por Martínez (2006).
+                    </p>
+                </div>
+            </div>
+
+            <div class="servicio">
+                <button onclick="toggleDetail('servicio2')">Terapia individual con enfoque cognitivo-conductual</button>
+                <div id="servicio2" class="detalle oculto">
+                    <p>
+                        La terapia individual proporciona intervenciones personalizadas para abordar problemas específicos, como la ansiedad laboral crónica. Según 
+                        la APA (2017), la terapia cognitivo-conductual es una de las formas más efectivas de intervención para la ansiedad laboral.
+                    </p>
+                </div>
+            </div>
+
+            <div class="servicio">
+                <button onclick="toggleDetail('servicio3')">Consultoría organizacional para prevención de la ansiedad</button>
+                <div id="servicio3" class="detalle oculto">
+                    <p>
+                        Ofrecemos consultoría para implementar políticas de bienestar emocional en la empresa, diseñando programas preventivos que promuevan un ambiente saludable.
+                        Estas intervenciones están alineadas con los principios de ética organizacional descritos por la UNESCO (2005).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn-back" onclick="window.history.back()">Volver a la página principal</button>
+    </main>
+
+    <script src="servicios.js"></script>
+</body>
+</html>
