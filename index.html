@@ -3,76 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Campaña Ética</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Campaña Ética: Ansiedad Laboral</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header class="background-header">
-        <h1>Nuestros Servicios</h1>
-        <p>Soluciones efectivas para manejar y prevenir la ansiedad laboral.</p>
+        <h1>Campaña Ética: Ansiedad Laboral</h1>
+        <p>Promoviendo la salud mental en el trabajo mediante sensibilización y prevención.</p>
     </header>
 
+    <nav>
+        <button onclick="toggleSection('inicio')">Inicio</button>
+        <button onclick="toggleSection('dashboard')">Dashboard</button>
+        <a href="servicios.html"><button>Servicios</button></a>
+    </nav>
+
     <main>
-        <section class="contenido-servicios">
-            <h2>Dashboard: Problemática y Objetivo de la Campaña</h2>
-            
-            <div class="dashboard">
-                <h3>¿Por qué es importante abordar la ansiedad laboral?</h3>
-                <p>
-                    La ansiedad laboral es un factor crítico en el ambiente organizacional que afecta tanto el rendimiento como la salud de los empleados. 
-                    Según Martínez (2006), el estrés crónico puede generar trastornos psicológicos graves, afectar las relaciones interpersonales en el trabajo 
-                    y reducir la productividad organizacional. Las intervenciones deben enfocarse en <strong>visibilizar</strong> y <strong>sensibilizar</strong> 
-                    sobre los efectos de la ansiedad, utilizando principios éticos que respeten la confidencialidad y el bienestar de los empleados.
-                </p>
-                <p>
-                    <strong>El objetivo de nuestra campaña es:</strong><br>
-                    <strong>Qué:</strong> Sensibilizar sobre la importancia de la salud mental en el trabajo.<br>
-                    <strong>Cómo:</strong> A través de programas de prevención, talleres y terapia individual.<br>
-                    <strong>Para qué:</strong> Para reducir el estrés laboral y mejorar el bienestar psicológico y la productividad organizacional.
-                </p>
-                <h3>Cómo nuestros servicios ayudan a la prevención:</h3>
-                <p>
-                    Los servicios están diseñados para identificar, prevenir y gestionar la ansiedad laboral, utilizando enfoques basados en la psicología clínica 
-                    y organizacional. Según la UNESCO (2005), los principios éticos y el enfoque integral permiten que los empleados se sientan apoyados y capacitados 
-                    para enfrentar los desafíos emocionales relacionados con el trabajo.
-                </p>
-            </div>
-            
-            <h3>Estrategias Principales</h3>
-            <div class="servicio">
-                <button onclick="toggleDetail('servicio1')">Sesiones grupales de manejo del estrés</button>
-                <div id="servicio1" class="detalle oculto">
-                    <p>
-                        Este servicio incluye talleres prácticos de relajación y mindfulness para manejar el estrés, basados en técnicas cognitivas y conductuales.
-                        Martínez (2006) sugiere que estas técnicas ayudan a reducir la ansiedad y mejorar el bienestar general.
-                    </p>
-                </div>
-            </div>
-
-            <div class="servicio">
-                <button onclick="toggleDetail('servicio2')">Terapia individual con enfoque cognitivo-conductual</button>
-                <div id="servicio2" class="detalle oculto">
-                    <p>
-                        La terapia individual proporciona intervenciones personalizadas para abordar problemas específicos, como la ansiedad laboral crónica. 
-                        Según la APA (2017), la terapia cognitivo-conductual es una de las formas más efectivas de intervención para la ansiedad laboral.
-                    </p>
-                </div>
-            </div>
-
-            <div class="servicio">
-                <button onclick="toggleDetail('servicio3')">Consultoría organizacional para prevención de la ansiedad</button>
-                <div id="servicio3" class="detalle oculto">
-                    <p>
-                        Ofrecemos consultoría para implementar políticas de bienestar emocional en la empresa, diseñando programas preventivos que promuevan un ambiente saludable.
-                        Estas intervenciones están alineadas con los principios de ética organizacional descritos por la UNESCO (2005).
-                    </p>
-                </div>
-            </div>
+        <!-- Inicio -->
+        <section id="inicio" class="contenido">
+            <h2>Bienvenidos</h2>
+            <p>
+                En esta campaña buscamos sensibilizar y visibilizar la ansiedad laboral, un problema crítico que afecta la salud y productividad de los empleados. 
+                Es esencial abordarlo mediante una intervención ética y profesional.
+            </p>
         </section>
 
-        <button class="btn-back" onclick="window.history.back()">Volver a la página principal</button>
+        <!-- Dashboard -->
+        <section id="dashboard" class="contenido oculto">
+            <h2>Dashboard: ¿Por qué es importante abordar la ansiedad laboral?</h2>
+            <p>
+                La ansiedad laboral es un factor crítico en el ambiente organizacional que afecta tanto el rendimiento como la salud de los empleados. 
+                Según Martínez (2006), el estrés crónico puede generar trastornos psicológicos graves, afectar las relaciones interpersonales en el trabajo 
+                y reducir la productividad organizacional.
+            </p>
+
+            <button onclick="toggleDetail('porque')">¿Por qué es importante?</button>
+            <div id="porque" class="detalle oculto">
+                <p>
+                    Las intervenciones deben enfocarse en visibilizar y sensibilizar sobre los efectos de la ansiedad, utilizando principios éticos que respeten 
+                    la confidencialidad y el bienestar de los empleados. Las consecuencias del estrés laboral incluyen agotamiento, disminución del rendimiento, 
+                    y problemas de salud mental (UNESCO, 2005).
+                </p>
+            </div>
+
+            <button onclick="toggleDetail('como')">¿Cómo lo haremos?</button>
+            <div id="como" class="detalle oculto">
+                <p>
+                    A través de programas de prevención, talleres y terapia individual, brindando herramientas prácticas para reducir el estrés laboral y mejorar 
+                    el bienestar psicológico de los empleados.
+                </p>
+            </div>
+
+            <button onclick="toggleDetail('paraque')">¿Para qué lo hacemos?</button>
+            <div id="paraque" class="detalle oculto">
+                <p>
+                    Para reducir el estrés laboral, mejorar el bienestar psicológico y la productividad organizacional. Según la APA (2017), el bienestar emocional 
+                    de los empleados es crucial para mantener un rendimiento óptimo y evitar consecuencias graves como el agotamiento y la depresión.
+                </p>
+            </div>
+
+            <h3>Incidente Crítico</h3>
+            <p>
+                El incidente crítico que nos lleva a crear esta campaña es el caso de Sara, quien sufre ansiedad debido a la carga excesiva de trabajo. Esta situación 
+                pone de manifiesto la necesidad urgente de intervenir para prevenir problemas de salud mental en el entorno laboral.
+            </p>
+        </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>© 2024 - Campaña Ética en Psicología Organizacional</p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
