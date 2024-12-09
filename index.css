@@ -56,10 +56,20 @@ button:hover {
 }
 
 .background-header {
-    background: url('background-image.jpg') no-repeat center center/cover;
+    background: #0066cc;
     color: white;
     text-align: center;
     padding: 60px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+footer p {
+    margin: 0;
 }
 
 .btn-back {
